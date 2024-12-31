@@ -5,6 +5,10 @@ def hitung_transportasi(jenis, jarak):
     return tarif * jarak
 
 def main():
+    st.write("""
+    - motor: Rp 5,000 per km
+    - Mobil: Rp 8,000 per km
+    """)
     st.subheader("Transportasi Online")
     jenis = st.radio("Pilih jenis transportasi:", ["motor", "mobil"])
     jarak = st.number_input("Masukkan jarak (KM):", min_value=0.0, step=0.1)

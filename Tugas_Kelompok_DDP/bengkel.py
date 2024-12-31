@@ -9,6 +9,11 @@ def hitung_bengkel(layanan, jarak):
     return harga_layanan[layanan] + (5000 * jarak)
 
 def main():
+    st.write("""
+    - Tambal Ban: Rp 25,000
+    - Mekanik Mesin: Rp 200,000
+    - Derek Mobil: Rp 50,000
+    """)
     st.subheader("Jasa Bengkel/Montir Online")
     layanan = st.selectbox("Pilih layanan:", ["tambal ban", "mekanik mesin", "derek mobil"])
     jarak = st.number_input("Masukkan jarak (KM):", min_value=0.0, step=0.1)

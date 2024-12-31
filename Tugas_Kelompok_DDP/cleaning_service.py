@@ -10,6 +10,12 @@ def hitung_cleaning_service(layanan, jarak):
     return harga_layanan[layanan] + (5000 * jarak)
 
 def main():
+    st.write("""
+    - Kamar Mandi: Rp 30,000
+    - Kamar Tidur: Rp 25,000
+    - Kebun: Rp 75,000
+    - Full Service: Rp 110,000
+    """)
     st.subheader("Jasa Cleaning Service Online")
     layanan = st.selectbox("Pilih layanan:", ["kamar mandi", "kamar", "kebun", "full service"])
     jarak = st.number_input("Masukkan jarak (KM):", min_value=0.0, step=0.1)
